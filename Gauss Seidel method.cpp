@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    float x = 0, y = 0, z = 0; // Initial guess
+    float x = 0, y = 0, z = 0;
     float x1, y1, z1;
     int i = 0;
     float error = 0.0001;

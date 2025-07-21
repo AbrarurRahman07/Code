@@ -27,7 +27,7 @@ int main()
     double x[n] = {1.0,4.0,6.0};
     double y[n] = {0.0,1.386294,1.791760};
 
-    double value = 2.0; // Estimate ln(2)
+    double value = 2.0;
 
     double result = lagrangeInterpolation(x, y, n, value);
     double result2 = lagrangeInterpolation(x, y, 2, value);
