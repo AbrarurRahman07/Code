@@ -23,18 +23,18 @@ double lagrangeInterpolation(double x[], double y[], int n, double value)
 
 int main()
 {
-    const int n = 3;
+    int n=3;
     double x[n] = {1.0,4.0,6.0};
     double y[n] = {0.0,1.386294,1.791760};
 
     double value = 2.0;
 
-    double result = lagrangeInterpolation(x, y, n, value);
-    double result2 = lagrangeInterpolation(x, y, 2, value);
+    double result_1st_order = lagrangeInterpolation(x, y, 3, value);
+    double result_2nd_order = lagrangeInterpolation(x, y, 2, value);
 
     cout.precision(10);
-    cout << "Estimate of ln(2) using Lagrange Interpolation: " << result << endl;
-    cout << "Estimate of ln(2) using Lagrange Interpolation: " << result2 << endl;
+    cout << "Estimate of ln(2) using Lagrange 2nd order Interpolation: " << result_1st_order << endl;
+    cout << "Estimate of ln(2) using Lagrange 1st order Interpolation: " << result_2nd_order << endl;
     cout << "True value of ln(2): 0.6931472" << endl;
 
     return 0;
